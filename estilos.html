@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Entendendo o Atributo Style</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container-exemplo {
+            border: 2px solid #ddd;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+
+        code {
+            background: #eee;
+            padding: 2px 5px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>O Atributo Style (CSS Inline)</h1>
+
+    <p>O atributo <span style="color: red">style</span> é usado para aplicar regras de CSS diretamente a um único
+        elemento HTML. Diferente
+        das classes ou IDs que ficam em arquivos separados, o estilo aqui é definido dentro da própria tag, usando a
+        sintaxe <code>nome-da-propriedade: valor;</code>.</p>
+
+    <div class="container-exemplo">
+        <p style="color: #e67e22; font-weight: bold; font-size: 1.2rem;">
+            Este parágrafo está sendo estilizado individualmente com o atributo style!
+        </p>
+    </div>
+
+    <p>Uma característica crucial do <span style="color: red">style</span> inline é a sua <strong>especificidade</strong>. Ele tem
+        prioridade sobre quase qualquer outra regra definida em arquivos CSS externos ou na tag
+        <code>&lt;style&gt;</code>. Isso o torna útil para correções rápidas ou estilos que precisam ser únicos e
+        imutáveis.
+    </p>
+
+    <p>No entanto, o uso excessivo desse atributo é considerado uma má prática em projetos grandes. Como os estilos
+        ficam "espalhados" pelo HTML, fica muito difícil manter a consistência visual do site. Se você precisar mudar a
+        cor de 50 botões, terá que editar 50 tags manualmente em vez de apenas uma linha no arquivo CSS.</p>
+
+    <a href="classes.html">Atributos Class e Draggable<br></a>
+    <a href="identificador.html">O Atributo ID no HTML<br></a>
+    <a href="resumo.html">Dicionário de Tags HTML<br></a>
+    <a href="span.html">O Elemento HTML span<br></a>
+
+</body>
+
+</html>

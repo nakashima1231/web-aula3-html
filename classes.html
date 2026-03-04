@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Entendendo Classes e Draggable</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #f4f4f9;
+        }
+
+        /* Definindo uma classe para estilizar vários elementos de uma vez */
+        .cartao-arrastavel {
+            background-color: white;
+            border: 2px dashed #6c757d;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 10px;
+            cursor: grab;
+            /* Muda o ícone do mouse para uma "mãozinha" */
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        /* Efeito visual quando o elemento está sendo clicado/arrastado */
+        .cartao-arrastavel:active {
+            cursor: grabbing;
+            transform: scale(1.02);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .destaque-texto {
+            color: #2c3e50;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Atributos Class e Draggable</h1>
+
+    <p class="cartao-arrastavel" draggable="true">
+        <strong>1. O que é a Class?</strong> Diferente do ID, a <span class="destaque-texto">class</span> pode ser usada
+        em múltiplos elementos. Ela é ideal para criar padrões de design que se repetem, como botões, cartões ou listas,
+        permitindo que você altere todos de uma só vez no CSS.
+    </p>
+
+    <p class="cartao-arrastavel" draggable="true">
+        <strong>2. O Atributo Draggable:</strong> Este parágrafo possui o atributo <code>draggable="true"</code>. Isso
+        informa ao navegador que o elemento pode ser movido pelo usuário. Tente clicar e arrastar este bloco!
+    </p>
+
+    <p class="cartao-arrastavel" draggable="true">
+        <strong>3. Interatividade:</strong> Embora o HTML permita o movimento visual, para que o objeto seja "solto" em
+        algum lugar e execute uma ação (como um sistema de arrastar arquivos), costumamos usar a <span
+            class="destaque-texto">API de Drag and Drop</span> do JavaScript.
+    </p>
+
+    <p class="cartao-arrastavel" draggable="true">
+        <strong>4. Experiência do Usuário:</strong> O uso de classes junto com elementos arrastáveis facilita a criação
+        de interfaces modernas, como quadros Kanban ou organizadores de tarefas, mantendo o código limpo e organizado.
+    </p>
+
+    <a href="estilos.html">O Atributo Style (CSS Inline)<br></a>
+    <a href="identificador.html">O Atributo ID no HTML<br></a>
+    <a href="resumo.html">Dicionário de Tags HTML<br></a>
+    <a href="span.html">O Elemento HTML span<br></a>
+
+</body>
+
+</html>

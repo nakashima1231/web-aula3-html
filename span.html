@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title="definição">Entendendo o Elemento Span</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            max-width: 850px;
+            margin: 40px auto;
+            padding: 25px;
+            background-color: #fff;
+            color: #333;
+        }
+
+        h1 {
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        /* Estilizando spans específicos via classes */
+        .marca-texto {
+            background-color: #fff176;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+
+        .texto-alerta {
+            color: #d32f2f;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .codigo-inline {
+            font-family: monospace;
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            color: #c7254e;
+        }
+
+        .caixa-exemplo {
+            border: 1px solid #ddd;
+            padding: 15px;
+            background-color: #fafafa;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>O Elemento HTML &lt;span&gt;</h1>
+
+    <p>O <code>&lt;span&gt;</code> é um <strong>contêiner genérico em linha (inline)</strong>. Ao
+        contrário de uma
+        <code>&lt;div&gt;</code>, que cria uma nova linha e ocupa toda a largura disponível, o span ocupa apenas o
+        espaço necessário para o seu conteúdo, permitindo que você selecione partes específicas de um texto sem quebrar
+        o fluxo do parágrafo.
+    </p>
+
+    <div class="caixa-exemplo">
+        <p><strong>Exemplo Prático:</strong> Imagine que você quer destacar apenas <span>esta
+                parte específica</span> no meio de uma frase. Usamos o span para aplicar uma classe de CSS apenas
+            nesse trecho, mantendo o restante do parágrafo intacto.</p>
+    </div>
+
+    <p>Ele é considerado um elemento "semântico neutro". Isso significa que, por padrão, o navegador não aplica nenhum
+        estilo visual ou significado especial a ele. Ele serve puramente como um "gancho" para que possamos aplicar
+        <span class="texto-alerta">estilos CSS</span> ou manipulações via <span class="codigo-inline">JavaScript</span>
+        em fragmentos de texto.
+    </p>
+
+    <p>Uma aplicação muito comum do span é a criação de ícones ou elementos decorativos dentro de botões e menus. Por
+        ser flexível, você pode envolver letras individuais, palavras ou frases inteiras, permitindo um controle visual
+        absoluto sobre a tipografia da sua página sem interferir na estrutura dos blocos principais.</p>
+
+    <p>Em resumo: use a <code>&lt;div&gt;</code> para estruturar grandes seções do layout e o <code>&lt;span&gt;</code>
+        para <span style="font-style: italic; color: #555;">detalhes e formatações específicas</span> dentro do conteúdo
+        textual. Eles formam a base da organização visual moderna na web.</p>
+
+    <a href="classes.html">Atributos Class e Draggable<br></a>
+    <a href="estilos.html">O Atributo Style (CSS Inline)<br></a>
+    <a href="identificador.html">O Atributo ID no HTML<br></a>
+    <a href="resumo.html">Dicionário de Tags HTML<br></a>
+    <a href="span.html">O Elemento HTML span<br></a>
+
+
+
+</body>
+
+</html>
